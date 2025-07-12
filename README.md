@@ -1,166 +1,65 @@
-# Hemovue
- Intelligent Hemorrhage Detection from CT Scans using Machine Learning
+🧠 HemoVue
+Hemorrhage Detection from Brain CT Scans using Machine Learning
 
-HemoVue is an AI-powered diagnostic tool designed to detect brain hemorrhages from CT scan images. By combining medical imaging with demographic insights, this project evaluates multiple machine learning models to identify the most effective approach for real-world clinical use.
+HemoVue is an AI-based tool that automates the detection of brain hemorrhages from CT scan images using machine learning. It integrates imaging and patient demographic data to improve diagnostic accuracy.
 
-Overview
+🔍 Project Highlights
+Built and evaluated 6 ML models: Logistic Regression, SVM, Random Forest, Gradient Boosting, XGBoost, Neural Network.
 
-Early and accurate detection of brain hemorrhage is vital for patient care. Manual analysis of CT scans can be slow and subjective. HemoVue aims to assist radiologists by automating hemorrhage classification through data-driven insights.
+Best models: XGBoost and Neural Network showed the highest accuracy.
 
-Objectives
+Uses CT scan data and patient demographics for prediction.
 
-Build a machine learning pipeline to classify hemorrhage from CT scans.
+Evaluation based on accuracy, log loss, precision, recall, and F1-score.
 
-Compare six ML models to determine the best-performing ones.
+📁 Dataset
+Source: Kaggle – CT Brain Images
 
-Integrate imaging features with patient demographics for enhanced accuracy.
+Binary classification: hemorrhage/ and no_hemorrhage/
 
-Ensure robust evaluation using cross-validation and regularization techniques.
-
-Models Evaluated
-
-Logistic Regression
-
-Support Vector Machine (SVM)
-
-Random Forest
-
-Gradient Boosting
-
-XGBoost
-
-Artificial Neural Network (ANN)
-
-Top Performers: XGBoost and Neural Network delivered the highest accuracy and lowest log loss values.
-
-Methodology
-
-Data Preprocessing
-
-Normalization of CT images
-
-Encoding categorical demographic variables
-
-Handling missing values
-
-Training Strategy
-
-Stratified k-fold cross-validation
-
-Model-specific hyperparameter tuning
-
-Regularization to control overfitting
-
-Evaluation Metrics
-
-Accuracy
-
-Log Loss
-
-Precision / Recall / F1-score
-
-Confusion Matrix
-
-Experimental Results
-
-Model	Accuracy	Log Loss	Notes
-Logistic Regression	Moderate	Higher	Performs poorly with complex features
-SVM	Lower	Higher	Underperformed overall
-Random Forest	Good	Moderate	Balanced but slower
-Gradient Boosting	High	Low	Strong performance
-XGBoost	High	Low	Most stable and accurate
-Neural Network	Very High	Slightly Higher	Near-perfect accuracy
-
-Dataset
-
-This project uses the CT Scans for Hemorrhage Detection dataset from Kaggle, which contains thousands of brain scan images labeled for hemorrhage presence.
-
-Dataset link: https://www.kaggle.com/datasets/vbookshelf/computed-tomography-ct-images
-
-Dataset structure:
+Copy
+Edit
 dataset/
 ├── hemorrhage/
-│ ├── img1.png
-│ ├── ...
 ├── no_hemorrhage/
-├── img1.png
-└── ...
+🧪 How to Run
+Clone this repo:
 
-Demo
+bash
+Copy
+Edit
+git clone https://github.com/your-username/hemovue.git
+cd hemovue
+Install dependencies:
 
-CT Image Input	Prediction
-sample1.png	Hemorrhage
-sample2.png	No Hemorrhage
-
-Replace with your actual result images.
-
-Key Highlights
-
-Dual-Modal Data Fusion: Combines demographic data with image-based features.
-
-Model Comparison: Benchmarks six ML models under identical conditions.
-
-Top Accuracy: Neural Net and XGBoost deliver strong predictive power.
-
-Scalable Pipeline: Can be extended to multi-class classification or 3D CT slices.
-
-Future Scope
-
-Multi-class Hemorrhage Detection (e.g., subdural, epidural)
-
-3D Volumetric Analysis across CT slices
-
-Transfer Learning from pre-trained CNNs
-
-Attention Mechanisms to focus on bleeding areas
-
-GAN-based Data Augmentation for rare case synthesis
-
-Deployment via Flask or Streamlit
-
-Requirements
-
-Install dependencies using:
-
+bash
+Copy
+Edit
 pip install -r requirements.txt
+Run the notebook:
 
-Packages used:
+bash
+Copy
+Edit
+jupyter notebook hemorrhage_detection.ipynb
+🛠️ Tech Stack
+Python, TensorFlow, Keras
 
-TensorFlow
-
-Keras
-
-NumPy
-
-OpenCV
-
-Matplotlib
+NumPy, OpenCV, Matplotlib
 
 scikit-learn
 
-How to Run
+🚀 Future Scope
+Multi-class hemorrhage classification
 
-Clone this repository:
-git clone https://github.com/your-username/hemovue.git
-cd hemovue
+3D CT scan support
 
-Add your dataset under the dataset/ directory.
+Web deployment using Streamlit or Flask
 
-Run the Jupyter notebook:
-jupyter notebook hemorrhage_detection.ipynb
+📜 License
+Licensed under the MIT License.
 
-Train models and view output predictions.
+🙌 Acknowledgements
+Kaggle Dataset
 
-License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
-Acknowledgements
-
-Kaggle dataset: CT Brain Images (https://www.kaggle.com/datasets/vbookshelf/computed-tomography-ct-images)
-
-TensorFlow and Keras open-source frameworks
-
-Contact
-
-For questions or collaborations, reach out via GitHub: https://github.com/your-username
+TensorFlow, Keras community
