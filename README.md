@@ -1,63 +1,79 @@
-🧠 HemoVue
-Hemorrhage Detection from Brain CT Scans using Machine Learning
+ 
 
-HemoVue is an AI-based tool that automates the detection of brain hemorrhages from CT scan images using machine learning. It integrates imaging and patient demographic data to improve diagnostic accuracy.
+#  HemoVue
 
-🔍 Project Highlights
-Built and evaluated 6 ML models: Logistic Regression, SVM, Random Forest, Gradient Boosting, XGBoost, Neural Network.
+**Hemorrhage Detection from Brain CT Scans using Machine Learning**
 
-Best models: XGBoost and Neural Network showed the highest accuracy.
+**HemoVue** is an AI-driven solution for detecting brain hemorrhages from CT scan images. By combining imaging features with patient demographics, it improves diagnostic accuracy using multiple machine learning models.
 
-Uses CT scan data and patient demographics for prediction.
+---
 
-Evaluation based on accuracy, log loss, precision, recall, and F1-score.
+## Highlights
 
-📁 Dataset
-Source: Kaggle – CT Brain Images
+* Trained and compared 6 ML models:
+  Logistic Regression, SVM, Random Forest, Gradient Boosting, XGBoost, Neural Network
+* **Top performers:** XGBoost and Neural Network
+* Metrics: Accuracy, Log Loss, Precision, Recall, F1-Score
+* Dataset includes labeled CT scans for binary classification (hemorrhage / no hemorrhage)
 
-Binary classification: hemorrhage/ and no_hemorrhage/
+---
 
-Copy
-Edit
+##  Dataset
+
+**Source:** [Kaggle - CT Brain Images](https://www.kaggle.com/datasets/vbookshelf/computed-tomography-ct-images)
+**Structure:**
+
+```
 dataset/
 ├── hemorrhage/
 ├── no_hemorrhage/
-🧪 How to Run
-Clone this repo:
+```
 
-bash
-Copy
-Edit
+---
+
+##  How to Run
+
+1. Clone the repository:
+
+```bash
 git clone https://github.com/your-username/hemovue.git
 cd hemovue
-Install dependencies:
+```
 
-bash
-Copy
-Edit
+2. Install required libraries:
+
+```bash
 pip install -r requirements.txt
-Run the notebook:
+```
 
-bash
-Copy
-Edit
+3. Launch the notebook:
+
+```bash
 jupyter notebook hemorrhage_detection.ipynb
-🛠️ Tech Stack
-Python, TensorFlow, Keras
+```
 
-NumPy, OpenCV, Matplotlib
+---
 
-scikit-learn
+##  Tech Stack
 
-🚀 Future Scope
-Multi-class hemorrhage classification
+* Python
+* TensorFlow, Keras
+* NumPy, OpenCV, Matplotlib
+* scikit-learn
 
-3D CT scan support
+---
 
-Web deployment using Streamlit or Flask
+##  Future Enhancements
+
+* Multi-class hemorrhage detection (e.g., subdural, epidural)
+* 3D CT scan analysis
+* Web deployment using Streamlit or Flask
+
+---
+
+## 🙌 Acknowledgements
+
+* [CT Brain Images – Kaggle Dataset](https://www.kaggle.com/datasets/vbookshelf/computed-tomography-ct-images)
  
-
-🙌 Acknowledgements
-Kaggle Dataset
-
-TensorFlow, Keras community
+---
+ 
