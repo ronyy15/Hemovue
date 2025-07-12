@@ -28,29 +28,7 @@ dataset/
 ├── hemorrhage/
 ├── no_hemorrhage/
 ```
-
----
-
-##  How to Run
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/your-username/hemovue.git
-cd hemovue
-```
-
-2. Install required libraries:
-
-```bash
-pip install -r requirements.txt
-```
-
-3. Launch the notebook:
-
-```bash
-jupyter notebook hemorrhage_detection.ipynb
-```
+ 
 
 ---
 
@@ -71,7 +49,7 @@ jupyter notebook hemorrhage_detection.ipynb
 
 ---
 
-## 🙌 Acknowledgements
+## Acknowledgements
 
 * [CT Brain Images – Kaggle Dataset](https://www.kaggle.com/datasets/vbookshelf/computed-tomography-ct-images)
  
