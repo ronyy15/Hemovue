@@ -55,9 +55,7 @@ Multi-class hemorrhage classification
 3D CT scan support
 
 Web deployment using Streamlit or Flask
-
-📜 License
-Licensed under the MIT License.
+ 
 
 🙌 Acknowledgements
 Kaggle Dataset
